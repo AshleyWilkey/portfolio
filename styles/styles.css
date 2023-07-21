@@ -1,0 +1,125 @@
+:root {
+  --primary-background: #ffecea;
+  --primary-background-light: #fff3f2;
+  --primary-text-color: #996269;
+  --accent-text-color: #7ab3cc;
+  --secondary-background: #cbc3cc;
+}
+
+body {
+  color: var(--primary-text-color);
+  background-color: var(--primary-background);
+  margin: 0;
+}
+
+h2 {
+  font-family: "archivo narrow";
+  font-size: 2.4rem;
+  color: var(--accent-text-color);
+}
+p {
+  font-family: sans-serif;
+}
+footer {
+  background-color: var(--primary-text-color);
+  padding: 1.6rem;
+  text-align: center;
+  color: var(--primary-background);
+  margin-top: 4rem;
+}
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+#nav {
+  font-family: "julius sans one";
+  margin-bottom: 4rem;
+  background-color: white;
+}
+#nav-logo {
+  font-size: 2.6rem;
+  margin: 1rem 0;
+  color: var(--accent-text-color);
+}
+#nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#nav-links li {
+  display: inline-block;
+  list-style-type: none;
+  padding-right: 2rem;
+}
+#nav-links a {
+  text-decoration: none;
+  color: var(--accent-text-color);
+}
+
+#about-me {
+  display: flex;
+  flex: 1;
+  align-items: center;
+}
+#about-me-left {
+  margin: 0;
+  height: 200px;
+  width: auto;
+}
+#about-me-right img {
+  height: auto;
+  width: 250px;
+  border-radius: 14px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+#contact-me {
+  margin-top: 4rem;
+}
+
+#contact-row {
+  display: flex;
+}
+
+#contact-social {
+  flex: 2;
+  padding: 0 2rem 0 0;
+}
+
+#contact-social p {
+  font-size: 1.2rem;
+}
+#contact-social h2 {
+  margin-top: 0;
+}
+#contact-social ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 2rem;
+}
+#contact-social li {
+  list-style-type: none;
+  font-size: 2rem;
+}
+
+#contact-social li a {
+  color: var(--primary-text-color);
+}
+
+#contact-social li a:visited {
+  color: var(--primary-text-color);
+}
+
+#contact-form {
+  flex: 3;
+  font-size: 1.2rem;
+}
+#contact-form input,
+textarea {
+  width: 100%;
+  border-radius: 10px;
+  border: 2px solid var(--secondary-background);
+  outline-color: var(--primary-text-color);
+  padding: 6px;
+  margin: 6px 0;
+}

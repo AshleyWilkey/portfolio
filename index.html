@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/slideshow.css" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=Julius+Sans+One&family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+    <nav id="nav">
+      <div class="container">
+        <h1 id="nav-logo">Ashley Wilkey</h1>
+        <ul id="nav-links">
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact-me">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <main>
+      <div class="container">
+        <section id="about-me">
+          <div id="about-me-left">
+            <h2>About Me</h2>
+            <p>
+              Hello, I am Ashley Renee Wilkey currently residing in San Diego,
+              California. I started my Front-End development journey in 2022.
+              What intrigued my intrest in Web Development was browsing through
+              Codepen and seeing how people brought their vision to life and the
+              various ways you can achieve that goal. When I'm not studying or
+              coding I like to hangout with my husband watching TV, playing a PC
+              game or cuddling our fur baby Opie.
+            </p>
+          </div>
+          <div id="about-me-right">
+            <img src="images/IMG_1871.JPG" alt="Ashley Wilkey" />
+          </div>
+        </section>
+
+        <section id="projects">
+          <h2>Projects</h2>
+          <!-- Slideshow container -->
+          <div class="slideshow-container">
+            <!-- Full-width images with number and caption text -->
+            <div class="mySlides fade">
+              <div class="numbertext">1 / 4</div>
+              <img src="images/morocco.png" style="width: 100%" />
+
+              <div class="text">Blog Post</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">2 / 4</div>
+              <img src="images/goonies.png" style="width: 100%" />
+              <div class="text">Goonies landing Page</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">3 / 4</div>
+              <img src="images/nft-card.png" style="width: 100%" />
+              <div class="text">NFT Card component</div>
+            </div>
+
+            <div class="mySlides fade">
+              <div class="numbertext">4 / 4</div>
+              <img src="images/base-apparel.png" style="width: 100%" />
+              <div class="text">Base Apparel announcement card</div>
+            </div>
+            <!-- Next and previous buttons -->
+            <div>
+              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+
+            <br />
+
+            <!-- The dots/circles -->
+            <div style="text-align: center; margin-top: 1rem">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+              <span class="dot" onclick="currentSlide(4)"></span>
+            </div>
+          </div>
+        </section>
+        <!--Contact Form-->
+
+        <section id="contact-me">
+          <div id="contact-row">
+            <div id="contact-social">
+              <h2>Contact</h2>
+              <p>
+                If you would like to get in touch, you can reach me on any of my
+                socials below or send me an email via the form on the right.
+              </p>
+              <ul>
+                <li>
+                  <a href="https://twitter.com/ashley_wilkey23" target="_blank"
+                    ><i class="fa-brands fa-twitter"></i
+                  ></a>
+                </li>
+                <li>
+                  <a href="https://github.com/AshleyWilkey" target="_blank"
+                    ><i class="fa-brands fa-github"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/ashleywilkey323/"
+                    target="_blank"
+                  >
+                    <i class="fa-brands fa-instagram"></i
+                  ></a>
+                </li>
+              </ul>
+            </div>
+            <form id="contact-form">
+              <div class="row">
+                <label class="required" for="name">Name:</label><br />
+                <input
+                  id="name"
+                  class="input"
+                  name="name"
+                  type="text"
+                  value=""
+                  size="30"
+                /><br />
+                <span id="name_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="email">Email:</label><br />
+                <input
+                  id="email"
+                  class="input"
+                  name="email"
+                  type="text"
+                  value=""
+                  size="30"
+                /><br />
+                <span id="email_validation" class="error_message"></span>
+              </div>
+              <div class="row">
+                <label class="required" for="message">Your message:</label
+                ><br />
+                <textarea
+                  id="message"
+                  class="input"
+                  name="message"
+                  rows="7"
+                  cols="30"
+                ></textarea
+                ><br />
+                <span id="message_validation" class="error_message"></span>
+              </div>
+
+              <button id="submit_button" type="submit">Send email</button>
+            </form>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>Designed by Ashley Wilkey</p>
+    </footer>
+    <script src="js/slideshow.js"></script>
+    <script src="js/main.js"></script>
+    <script
+      src="https://kit.fontawesome.com/97b60168cb.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
