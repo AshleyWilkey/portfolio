@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=Julius+Sans+One&family=Roboto:wght@500&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=Julius+Sans+One&family=Karla&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
     <title>Portfolio</title>
@@ -29,7 +29,7 @@
     <main>
       <div class="container">
         <section id="about-me">
-          <div id="about-me-left">
+          <div id="about-me-text">
             <h2>About Me</h2>
             <p>
               Hello, I am Ashley Renee Wilkey currently residing in San Diego,
@@ -41,7 +41,7 @@
               game or cuddling our fur baby Opie.
             </p>
           </div>
-          <div id="about-me-right">
+          <div id="about-me-image">
             <img src="images/IMG_1871.JPG" alt="Ashley Wilkey" />
           </div>
         </section>
@@ -53,26 +53,67 @@
             <!-- Full-width images with number and caption text -->
             <div class="mySlides fade">
               <div class="numbertext">1 / 4</div>
-              <img src="images/morocco.png" style="width: 100%" />
+              <img
+                src="images/morocco.png"
+                alt="morocco blog post screenshot"
+                style="width: 100%"
+              />
 
-              <div class="text">Blog Post</div>
+              <div class="text">
+                Blog Post
+                <br />
+                <a
+                  href="https://ashleywilkey.github.io/Morocco/"
+                  target="_blank"
+                  >View Live Site</a
+                >
+              </div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">2 / 4</div>
-              <img src="images/goonies.png" style="width: 100%" />
-              <div class="text">Goonies landing Page</div>
+              <img
+                src="images/goonies.png"
+                alt="goonies page screenshot"
+                style="width: 100%"
+              />
+              <div class="text">
+                Goonies landing Page
+                <br />
+
+                <a
+                  href="https://ashleywilkey.github.io/goonies-landing-page/"
+                  target="_blank"
+                  >View Live Site</a
+                >
+              </div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">3 / 4</div>
-              <img src="images/nft-card.png" style="width: 100%" />
-              <div class="text">NFT Card component</div>
+              <img
+                src="images/nft-card.png"
+                alt="nft-card screenshot"
+                style="width: 100%"
+              />
+              <div class="text">
+                NFT Card component
+                <br />
+                <a
+                  href="https://ashleywilkey.github.io/nft-preview-card"
+                  target="_blank"
+                  >View Live Site</a
+                >
+              </div>
             </div>
 
             <div class="mySlides fade">
               <div class="numbertext">4 / 4</div>
-              <img src="images/base-apparel.png" style="width: 100%" />
+              <img
+                src="images/base-apparel.png"
+                alt="base-apparel screenshot"
+                style="width: 100%"
+              />
               <div class="text">Base Apparel announcement card</div>
             </div>
             <!-- Next and previous buttons -->
@@ -123,9 +164,12 @@
                 </li>
               </ul>
             </div>
-            <form id="contact-form">
+            <form
+              id="contact-form"
+              action="https://formspree.io/f/xyyqzdlv"
+              method="POST"
+            >
               <div class="row">
-                <label class="required" for="name">Name:</label><br />
                 <input
                   id="name"
                   class="input"
@@ -133,11 +177,11 @@
                   type="text"
                   value=""
                   size="30"
+                  placeholder="Name"
                 /><br />
                 <span id="name_validation" class="error_message"></span>
               </div>
               <div class="row">
-                <label class="required" for="email">Email:</label><br />
                 <input
                   id="email"
                   class="input"
@@ -145,18 +189,18 @@
                   type="text"
                   value=""
                   size="30"
+                  placeholder="Email"
                 /><br />
                 <span id="email_validation" class="error_message"></span>
               </div>
               <div class="row">
-                <label class="required" for="message">Your message:</label
-                ><br />
                 <textarea
                   id="message"
                   class="input"
                   name="message"
                   rows="7"
                   cols="30"
+                  placeholder="Your message"
                 ></textarea
                 ><br />
                 <span id="message_validation" class="error_message"></span>
@@ -169,7 +213,7 @@
       </div>
     </main>
     <footer>
-      <p>Designed by Ashley Wilkey</p>
+      <p><i class="fa-regular fa-heart"></i> Ashley Wilkey</p>
     </footer>
     <script src="js/slideshow.js"></script>
     <script src="js/main.js"></script>
