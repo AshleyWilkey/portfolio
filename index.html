@@ -2,6 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="description" content="Portfolio" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/slideshow.css" />
     <link rel="stylesheet" href="styles/styles.css" />
@@ -11,7 +12,7 @@
       href="https://fonts.googleapis.com/css2?family=Archivo+Narrow:wght@400;500;600&family=Julius+Sans+One&family=Karla&family=Roboto:wght@500&display=swap"
       rel="stylesheet"
     />
-    <title>Portfolio</title>
+    <title>Ashley Wilkey</title>
   </head>
 
   <body>
@@ -19,7 +20,9 @@
       <div class="container">
         <div>
           <h1 id="nav-logo">Ashley Wilkey</h1>
-          <button id="mobile-nav"><i class="fa-solid fa-bars"></i></button>
+          <button id="mobile-nav" aria-label="open navigation">
+            <i class="fa-solid fa-bars"></i>
+          </button>
         </div>
         <ul id="nav-links">
           <li><a href="#about-me">About Me</a></li>
@@ -87,8 +90,9 @@
                 <a
                   href="https://ashleywilkey.github.io/goonies-landing-page/"
                   target="_blank"
-                  >View Live Site</a
                 >
+                  View Live Site
+                </a>
               </div>
             </div>
 
@@ -121,8 +125,20 @@
             </div>
             <!-- Next and previous buttons -->
             <div>
-              <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="next" onclick="plusSlides(1)">&#10095;</a>
+              <button
+                class="prev"
+                onclick="plusSlides(-1)"
+                aria-label="show previous project"
+              >
+                &#10094;
+              </button>
+              <button
+                class="next"
+                onclick="plusSlides(1)"
+                aria-label="show previous project"
+              >
+                &#10095;
+              </button>
             </div>
 
             <br />
@@ -148,22 +164,31 @@
               </p>
               <ul>
                 <li>
-                  <a href="https://twitter.com/ashley_wilkey23" target="_blank"
-                    ><i class="fa-brands fa-twitter"></i
-                  ></a>
+                  <a
+                    href="https://twitter.com/ashley_wilkey23"
+                    target="_blank"
+                    aria-label="link to twitter"
+                  >
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
                 </li>
                 <li>
-                  <a href="https://github.com/AshleyWilkey" target="_blank"
-                    ><i class="fa-brands fa-github"></i
-                  ></a>
+                  <a
+                    href="https://github.com/AshleyWilkey"
+                    target="_blank"
+                    aria-label="link to github"
+                  >
+                    <i class="fa-brands fa-github"></i>
+                  </a>
                 </li>
                 <li>
                   <a
                     href="https://www.instagram.com/ashleywilkey323/"
                     target="_blank"
+                    aria-label="link to instagram"
                   >
-                    <i class="fa-brands fa-instagram"></i
-                  ></a>
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
                 </li>
               </ul>
             </div>

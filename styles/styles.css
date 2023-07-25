@@ -1,5 +1,5 @@
 :root {
-  --primary-background: #ffecea;
+  --primary-background: #fdf0ee;
   --primary-background-light: #fff3f2;
   --primary-text-color: #996269;
   --accent-text-color: #7ab3cc;
@@ -33,6 +33,7 @@ footer {
 .container {
   max-width: 1024px;
   margin: 0 auto;
+  padding: 0 2rem;
 }
 
 #nav {
@@ -42,7 +43,7 @@ footer {
   border-bottom: solid 2px var(--secondary-background);
 }
 #nav-logo {
-  font-size: 2.6rem;
+  font-size: 2.2rem;
   margin: 1rem 0;
   color: var(--primary-text-color);
 }
@@ -65,7 +66,7 @@ footer {
 #nav-links li {
   display: inline-block;
   list-style-type: none;
-  padding-right: 2rem;
+  margin-left: 2rem;
   font-size: 1.2rem;
 }
 #nav-links a {
@@ -145,19 +146,18 @@ footer {
 #contact-form {
   flex: 1;
   font-size: 1.8rem;
-  padding: 0 8rem;
 }
 #contact-form input,
 textarea {
   display: block;
-  width: 100%;
+  width: 90%;
   font-family: "roboto";
   color: var(--primary-text-color);
   border: 2px solid var(--secondary-background);
   border-radius: 4px;
   outline-color: var(--primary-text-color);
   padding: 6px;
-  margin: 6px 6px;
+  margin: 6px auto;
 }
 
 #contact-form ::placeholder {
@@ -167,17 +167,29 @@ textarea {
 #contact-form button {
   display: block;
   font-family: "roboto";
-  color: var(--accent-text-color);
+  color: white;
   border: 2px solid var(--secondary-background);
+  background-color: var(--accent-text-color);
   border-radius: 4px;
   margin: 0 auto;
-  width: 30%;
+  padding: 0.5rem 1.5rem;
+  transition: 0.2s;
+  transition-property: filter;
+  cursor: pointer;
 }
 
+#contact-form button:hover {
+  filter: brightness(110%);
+}
+
+@media screen and (max-width: 300px) {
+  #nav-logo {
+    font-size: 1.6rem;
+  }
+}
 @media screen and (max-width: 768px) {
   #nav {
     margin-bottom: 0;
-    padding: 0 2rem;
   }
   #nav .container {
     flex-direction: column;
@@ -215,29 +227,24 @@ textarea {
   }
   #about-me {
     flex-direction: column-reverse;
-    padding: 2rem;
+    padding: 2rem 0;
   }
   #about-me-text p {
     width: 100%;
   }
 
-  #projects {
-    padding: 0 2rem 2rem 2rem;
-  }
   #contact-me {
-    margin-top: 0;
+    margin-top: 2rem;
   }
   #contact-row {
     flex-direction: column;
     align-items: center;
-    padding: 2rem;
   }
   #contact-social ul {
     max-width: 304px;
     margin: 2rem auto;
   }
   #contact-form {
-    padding: 0;
-    width: 90%;
+    width: 100%;
   }
 }
